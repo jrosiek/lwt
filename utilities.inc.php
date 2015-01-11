@@ -1730,6 +1730,20 @@ function makeStatusClassFilterHelper($status,&$array) {
 }
 
 // -------------------------------------------------------------
+function makeOpenInfoLink($url, $txt) {
+	$r = '';
+	if ($url != '' && $txt != '') {
+		if(substr($url,0,1) == '*') {
+			$r = ' <span class="click" onclick="owin(' . prepare_textdata_js(substr($url,1)) . ');">' . $txt . '</span> ';
+		} 
+		else {
+			$r = ' <a href="' . $url . '" target="ru">' . $txt . '</a> ';
+		} 
+	}
+	return $r;
+}
+
+// -------------------------------------------------------------
 
 function createTheDictLink($u,$t) {
 	// Case 1: url without any ###: append UTF-8-term
@@ -2886,7 +2900,7 @@ function get_first_translation($trans) {
 function get_annotation_link($textid) {
 	global $tbpref;
 	if ( get_first_value('select length(TxAnnotatedText) as value from ' . $tbpref . 'texts where TxID=' . $textid) > 0) 
-	return ' &nbsp;<a href="print_impr_text.php?text=' . $textid . '" target="_top"><img src="icn/tick.png" title="Annotated Text" alt="Annotated Text" /></a>';
+  	return ' &nbsp;<a href="print_impr_text.php?text=' . $textid . '" target="_top"><img src="icn/tick.png" title="Annotated Text" alt="Annotated Text" /></a>';
 	else 
 		return '';
 }

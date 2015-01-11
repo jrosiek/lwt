@@ -337,8 +337,8 @@ if (isset($_REQUEST['new'])) {
 	</td>
 	</tr>
 	<tr>
-	<td class="td1 right">Source URI:</td>
-	<td class="td1"><input type="text" class="checkurl" data_info="Source URI" name="TxSourceURI" value="" maxlength="1000" size="60" /></td>
+	<td class="td1 right">Info URI:</td>
+	<td class="td1"><input type="text" class="checkinfourl" data_info="Info URI" name="TxSourceURI" value="" maxlength="1000" size="60" /></td>
 	</tr>
 	<tr>
 	<td class="td1 right">Tags:</td>
@@ -412,8 +412,8 @@ elseif (isset($_REQUEST['chg'])) {
 		</td>
 		</tr>
 		<tr>
-		<td class="td1 right">Source URI:</td>
-		<td class="td1"><input type="text" class="checkurl" data_info="Source URI" name="TxSourceURI" value="<?php echo tohtml($record['TxSourceURI']); ?>" maxlength="1000" size="60" /></td>
+		<td class="td1 right">Info URI:</td>
+		<td class="td1"><input type="text" class="checkinfourl" data_info="Info URI" name="TxSourceURI" value="<?php echo tohtml($record['TxSourceURI']); ?>" maxlength="1000" size="60" /></td>
 		</tr>
 		<tr>
 		<td class="td1 right">Tags:</td>
