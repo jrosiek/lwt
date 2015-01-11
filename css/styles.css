@@ -40,7 +40,8 @@ body {
 	padding: 0px;
 }
 input[type=text] {
-	font: 85% "Lucida Grande",Arial,sans-serif,STHeiti,"Arial Unicode MS",MingLiu;
+	font: 100% "Lucida Grande",Arial,sans-serif,STHeiti,"Arial Unicode MS",MingLiu;
+	/*font: 85% "Lucida Grande",Arial,sans-serif,STHeiti,"Arial Unicode MS",MingLiu;*/
 	border: 1px solid #C6C6C6;
 	padding: 3px;
 }
@@ -115,7 +116,8 @@ span.status5stat {
 	color: #000000;
 }
 textarea {
-	font: 85% "Lucida Grande",Arial,sans-serif,STHeiti,"Arial Unicode MS",MingLiu;
+	font: 100% "Lucida Grande",Arial,sans-serif,STHeiti,"Arial Unicode MS",MingLiu;
+	/*font: 85% "Lucida Grande",Arial,sans-serif,STHeiti,"Arial Unicode MS",MingLiu;*/
 	border: 1px solid #C6C6C6;
 	padding: 3px;
 }
