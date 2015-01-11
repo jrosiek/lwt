@@ -155,7 +155,8 @@ if (isset($_COOKIE['LWT-WP-User'])) {
 
 	<br /><br /></li>
 <li><a href="info.htm">Help/Information</a></li>
-<li><a href="mobile.php">Mobile LWT (Experimental)</a></li>
+<li><a href="mobile.php">Mobile LWT (Experimental)</a><br/><br/></li>
+<li><a href="wiki">Wiki</a></li>
 </ul>
 
 <p class="smallgray graydotted">&nbsp;</p>
